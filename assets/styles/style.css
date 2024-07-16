@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    font-size: 32px;
+    padding: 75px;
+    background-color: #005aab;
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+aside {
+    flex: 2;
+}
+
+nav {
+    background-color: #4a4a4a;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.konten {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+nav a {
+    font-size: 24px;
+    font-weight: 250;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav ul {
+    padding-inline: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 25px;
+    color: white;
+    background-color: #005aab;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.image {
+    width: 100%;
+    max-height: 400px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+h2 {
+    color: grey;
+    font-size: 24px;
+}
+
+.profil header {
+    text-align: center;
+}
+
+.profil img {
+    max-width: 200px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* Perangkat dengan lebar layar 768px dan lebih kecil darinya */
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
